@@ -87,10 +87,9 @@ public class HangMan {
                 }
 
             }else{
-                if (!wrongLetters.contains(letter)){
                     wrongLetters = wrongLetters.concat(letter + " ");
                     counter ++;
-                }
+
             }
             System.out.println(String.format("You have guessed ( %d ) wrong letters: %s ",counter,wrongLetters));
             if(counter == CHANCE_LIMIT )
